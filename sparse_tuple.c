@@ -18,26 +18,29 @@ int main()
       { ++z;}
      }
   }
-int b[z][3];
+int m=z+1;
+int b[m][3];
 b[0][0]=n;
 b[0][1]=n;
 b[0][2]=z;
+int k=1;
 for(i=0;i<n;++i)
 { for(j=0;j<n;++j)
    
   { if(a[i][j]!=0)
-    { for(k=0;k<n;++k)
-      {b[k][0]=i;
-      b[k][1]=j;
+    { 
+      b[k][0]=i+1;
+      b[k][1]=j+1;
       b[k][2]=a[i][j];
+      ++k;
      }
    }
 }
 }
-for(i=0;i<z;++i)
+for(i=0;i<m;++i)
 { printf("\n");
    for(j=0;j<3;++j)
-  { printf("%d",b[i][j]);
+  { printf("%d\t",b[i][j]);
   }
 }
 return 0;
