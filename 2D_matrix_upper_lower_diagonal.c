@@ -28,11 +28,11 @@ int main()
       }
     }
   }
-//OTHER DIAGONAL ELEMENT
+//SECONDARY DIAGONAL ELEMENT
   for(i=0;i<n;++i)
   { printf("\n");
     for(j=0;j<n;++j)
-    { if((i+j)%2==0)
+    { if((i+j)==(n-1))
       { printf("%d\t",a[i][j]);
       }
     }
