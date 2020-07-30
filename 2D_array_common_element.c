@@ -20,10 +20,13 @@ int main()
   }
   for(i=1;i<n;++i)
   { for(j=0;j<n;++j)
-    { if(a[i][j]==m[j])
-      { c[j]++;
-      }
+    { for(k=0;k<n;++k)
+     {
+       if(a[i][j]==m[j])
+       { c[j]++;
+       }
     }
+   }
   }
   for(i=0;i<n;++i)
   { if(c[i]==n)
