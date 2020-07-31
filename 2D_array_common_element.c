@@ -22,8 +22,8 @@ int main()
   { for(j=0;j<n;++j)
     { for(k=0;k<n;++k)
      {
-       if(a[i][j]==m[j])
-       { c[j]++;
+       if(a[i][j]==m[k])
+       { c[k]++;
        }
     }
    }
