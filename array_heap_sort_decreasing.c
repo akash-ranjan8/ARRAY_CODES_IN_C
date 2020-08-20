@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+//Min heap is used in order to print array in decreasing order
 void heapify(int a[],int n,int i)
 { int s,left,right,t;
   s=i;
