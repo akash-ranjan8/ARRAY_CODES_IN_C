@@ -1,7 +1,7 @@
     #include<stdio.h> 
     #include<time.h> 
     int temp;  
-      
+    //max heap is used for asscending order  
     void heapify(int arr[], int size, int i)  
     {  
     int largest = i;    
