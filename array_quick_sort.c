@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<time.h>
 int parition(int n,int a[n],int l,int h)
 { int pivot;
   pivot=a[l];
@@ -33,6 +34,8 @@ void quick_sort(int n,int a[n],int l,int h)
 }
 void main()
 { int n,i,l,h;
+  clock_t t;
+  t=clock();
   printf("enter the size of array\n");
   scanf("%d",&n);
   int a[n];
@@ -47,4 +50,7 @@ void main()
   for(i=0;i<n;++i)
   { printf("%d\t",a[i]);
   }
+  t=clock()-t;
+  double time_taken=((double)t)/CLOCKS_PER_SEC;
+  printf("\nTime Taken: %f\n",time_taken);
 }

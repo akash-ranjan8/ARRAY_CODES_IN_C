@@ -17,7 +17,7 @@ void main(){
          t=clock();
         printf("Enter size of array\n");
         scanf("%d",&size);
-         printf("Enter pivot element position\n");
+         printf("Enter pivot\n");
         scanf("%d",&p);
         int a[size];
         for(itr=0;itr<size;itr++){
@@ -37,15 +37,12 @@ void main(){
 }
 
 void quicksort(int *ar,int start,int end,int p){
-        if(p>=start && p<=end) {
+        if(start < end) {
         int pivot = p;
             
             pivot = divide(ar,start,end,pivot);
             quicksort(ar,start,pivot-1,start);
             quicksort (ar,pivot+1,end,pivot+1);
-    }
-    else
-    { printf("Wrong input\n");
     }
 }      
 int  divide(int *ar,int start,int end,int pivot){
